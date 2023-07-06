@@ -4,6 +4,10 @@
 ![总体流程](procedure.png)
 ***
 ## dependencies
+before deployment:
+  - 
+  - onnx 1.14.0
+  -
 sunrise3:
   - Ubuntu 20.04 Desktop
   - balenaEtcher(flash OS image to USB drives)
