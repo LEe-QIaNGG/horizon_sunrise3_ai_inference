@@ -9,7 +9,7 @@ sunrise3:
   - balenaEtcher(flash OS image to USB drives)
   - openexplorer/ai_toolchain_centos_7.v1.13.6
   - openexplorer toolkit
->wget -c ftp://vrftp.horizon.ai/Open_Explorer_gcc_9.3.0/2.2.3/horizon_xj3_open_explorer_v2.2.3_20220617.tar.gz
+`wget -c ftp://vrftp.horizon.ai/Open_Explorer_gcc_9.3.0/2.2.3/horizon_xj3_open_explorer_v2.2.3_20220617.tar.gz`
 ***
 Train your image captioning model according to [@sgrvinod](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning)
 
