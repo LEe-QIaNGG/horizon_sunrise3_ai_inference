@@ -8,4 +8,5 @@ sunrise3:
   - Ubuntu 20.04 Desktop
   - 
 ***
-train your image captioning model according to [@sgrvinod](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning)
+Train your image captioning model according to [@sgrvinod](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning)
+If you don't want to train and convert a cntk model, there's ready-made onnx model here [ONNX Model Zoo](https://github.com/onnx/models/tree/main/vision/body_analysis/emotion_ferplus).
