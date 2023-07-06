@@ -15,6 +15,6 @@ sunrise3:
   - openexplorer toolkit
 `wget -c ftp://vrftp.horizon.ai/Open_Explorer_gcc_9.3.0/2.2.3/horizon_xj3_open_explorer_v2.2.3_20220617.tar.gz`
 ***
-Train your image captioning model according to [@sgrvinod](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning)
+Train your image captioning model according to [@sgrvinod](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning). Net.py is added to obtain an end-to-end model in order to be converted to an onnx model. Other files in ./image_caption have been modified accordingly.
 
 If you don't want to train and convert a cntk model, there's ready-made onnx model here [ONNX Model Zoo](https://github.com/onnx/models/tree/main/vision/body_analysis/emotion_ferplus).
