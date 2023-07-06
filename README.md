@@ -5,9 +5,9 @@
 ***
 ## dependencies
 before deployment:
-  - 
+  - pytorch 1.12.1
   - onnx 1.14.0
-  -
+
 sunrise3:
   - Ubuntu 20.04 Desktop
   - balenaEtcher(flash OS image to USB drives)
