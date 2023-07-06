@@ -1,0 +1,108 @@
+2023-05-13 15:02:11,058 file: hb_mapper.py func: hb_mapper line No: 70 Start hb_mapper....
+2023-05-13 15:02:11,059 file: hb_mapper.py func: hb_mapper line No: 71 log will be stored in /data/horizon_x3/codes/hb_mapper_checker.log
+2023-05-13 15:02:11,059 file: hb_mapper.py func: hb_mapper line No: 72 hbdk version 3.27.1
+2023-05-13 15:02:11,060 file: hb_mapper.py func: hb_mapper line No: 73 horizon_nn version 0.12.8
+2023-05-13 15:02:11,060 file: hb_mapper.py func: hb_mapper line No: 74 hb_mapper version 1.5.7
+2023-05-13 15:02:11,061 file: hb_mapper.py func: hb_mapper line No: 76 parameter [output] is deprecated
+2023-05-13 15:02:11,112 file: helper.py func: helper line No: 124 Model input names: ['Input3']
+2023-05-13 15:02:11,113 file: hb_mapper_checker.py func: hb_mapper_checker line No: 104 Model type: onnx
+2023-05-13 15:02:11,113 file: hb_mapper_checker.py func: hb_mapper_checker line No: 105 march: bernoulli2
+2023-05-13 15:02:11,114 file: hb_mapper_checker.py func: hb_mapper_checker line No: 110 input names ['Input3']
+2023-05-13 15:02:11,114 file: hb_mapper_checker.py func: hb_mapper_checker line No: 111 input shapes {'Input3': [1, 1, 64, 64]}
+2023-05-13 15:02:11,159 file: helper.py func: helper line No: 124 Model input names: ['Input3']
+2023-05-13 15:02:11,160 file: hb_mapper_checker.py func: hb_mapper_checker line No: 117 Begin model checking....
+2023-05-13 15:02:11,161 file: build.py func: build line No: 36 [Sat May 13 15:02:11 2023] Start to Horizon NN Model Convert.
+2023-05-13 15:02:11,162 file: dict_parser.py func: dict_parser line No: 30 Parsing the input parameter:{'Input3': {'input_shape': [1, 1, 64, 64], 'input_batch': 1}}
+2023-05-13 15:02:11,162 file: dict_parser.py func: dict_parser line No: 491 The hbdk parameter is not specified, and the submodel will be compiled with the default parameter.
+2023-05-13 15:02:11,163 file: build.py func: build line No: 143 HorizonNN version: 0.12.8
+2023-05-13 15:02:11,163 file: build.py func: build line No: 147 HBDK version: 3.27.1
+2023-05-13 15:02:11,164 file: build.py func: build line No: 36 [Sat May 13 15:02:11 2023] Start to parse the onnx model.
+2023-05-13 15:02:11,260 file: onnx_parser.py func: onnx_parser line No: 146 ONNX model info:
+ONNX IR version:  6
+Opset version:    11
+Input name:       Input3, [1, 1, 64, 64]
+2023-05-13 15:02:11,390 file: build.py func: build line No: 39 [Sat May 13 15:02:11 2023] End to parse the onnx model.
+2023-05-13 15:02:11,391 file: build.py func: build line No: 266 Model input names: ['Input3']
+2023-05-13 15:02:11,435 file: build.py func: build line No: 535 Saving the original float model: ./.hb_check/original_float_model.onnx.
+2023-05-13 15:02:11,436 file: build.py func: build line No: 36 [Sat May 13 15:02:11 2023] Start to optimize the model.
+2023-05-13 15:02:11,916 file: build.py func: build line No: 39 [Sat May 13 15:02:11 2023] End to optimize the model.
+2023-05-13 15:02:11,959 file: build.py func: build line No: 546 Saving the optimized model: ./.hb_check/optimized_float_model.onnx.
+2023-05-13 15:02:11,959 file: build.py func: build line No: 36 [Sat May 13 15:02:11 2023] Start to calibrate the model.
+2023-05-13 15:02:12,315 file: calibration_data_set.py func: calibration_data_set line No: 66 There are 1 samples in the calibration data set.
+2023-05-13 15:02:12,479 file: max_calibrater.py func: max_calibrater line No: 68 Run calibration model with max method.
+2023-05-13 15:02:12,879 file: build.py func: build line No: 39 [Sat May 13 15:02:12 2023] End to calibrate the model.
+2023-05-13 15:02:12,879 file: build.py func: build line No: 36 [Sat May 13 15:02:12 2023] Start to quantize the model.
+2023-05-13 15:02:13,693 file: build.py func: build line No: 39 [Sat May 13 15:02:13 2023] End to quantize the model.
+2023-05-13 15:02:13,955 file: build.py func: build line No: 560 Saving the quantized model: ./.hb_check/quantized_model.onnx.
+2023-05-13 15:02:13,955 file: build.py func: build line No: 36 [Sat May 13 15:02:13 2023] Start to compile the model with march bernoulli2.
+2023-05-13 15:02:13,956 file: dict_parser.py func: dict_parser line No: 496 Parsing the hbdk parameter:{'hbdk_pass_through_params': '--O0'}
+2023-05-13 15:02:14,313 file: hybrid_build.py func: hybrid_build line No: 121 Compile submodel: CNTKGraph_subgraph_0
+2023-05-13 15:02:14,338 file: hbdk_cc.py func: hbdk_cc line No: 119 hbdk-cc parameters:['--O0', '--input-layout', 'NHWC', '--output-layout', 'NCHW']
+2023-05-13 15:02:14,397 file: hybrid_build.py func: hybrid_build line No: 121 Compile submodel: CNTKGraph_subgraph_1
+2023-05-13 15:02:14,424 file: hbdk_cc.py func: hbdk_cc line No: 119 hbdk-cc parameters:['--O0', '--input-layout', 'NHWC', '--output-layout', 'NCHW']
+2023-05-13 15:02:14,460 file: hybrid_build.py func: hybrid_build line No: 121 Compile submodel: CNTKGraph_subgraph_2
+2023-05-13 15:02:14,489 file: hbdk_cc.py func: hbdk_cc line No: 119 hbdk-cc parameters:['--O0', '--input-layout', 'NHWC', '--output-layout', 'NCHW']
+2023-05-13 15:02:14,525 file: hybrid_build.py func: hybrid_build line No: 121 Compile submodel: CNTKGraph_subgraph_3
+2023-05-13 15:02:14,558 file: hbdk_cc.py func: hbdk_cc line No: 119 hbdk-cc parameters:['--O0', '--input-layout', 'NHWC', '--output-layout', 'NCHW']
+2023-05-13 15:02:14,596 file: hybrid_build.py func: hybrid_build line No: 121 Compile submodel: CNTKGraph_subgraph_4
+2023-05-13 15:02:14,637 file: hbdk_cc.py func: hbdk_cc line No: 119 hbdk-cc parameters:['--O0', '--input-layout', 'NHWC', '--output-layout', 'NCHW']
+2023-05-13 15:02:14,681 file: hybrid_build.py func: hybrid_build line No: 121 Compile submodel: CNTKGraph_subgraph_5
+2023-05-13 15:02:14,737 file: hbdk_cc.py func: hbdk_cc line No: 119 hbdk-cc parameters:['--O0', '--input-layout', 'NHWC', '--output-layout', 'NCHW']
+2023-05-13 15:02:14,789 file: hybrid_build.py func: hybrid_build line No: 121 Compile submodel: CNTKGraph_subgraph_6
+2023-05-13 15:02:14,845 file: hbdk_cc.py func: hbdk_cc line No: 119 hbdk-cc parameters:['--O0', '--input-layout', 'NHWC', '--output-layout', 'NCHW']
+2023-05-13 15:02:14,903 file: hybrid_build.py func: hybrid_build line No: 121 Compile submodel: CNTKGraph_subgraph_7
+2023-05-13 15:02:14,968 file: hbdk_cc.py func: hbdk_cc line No: 119 hbdk-cc parameters:['--O0', '--input-layout', 'NHWC', '--output-layout', 'NCHW']
+2023-05-13 15:02:15,018 file: hybrid_build.py func: hybrid_build line No: 121 Compile submodel: CNTKGraph_subgraph_8
+2023-05-13 15:02:15,076 file: hbdk_cc.py func: hbdk_cc line No: 119 hbdk-cc parameters:['--O0', '--input-layout', 'NHWC', '--output-layout', 'NCHW']
+2023-05-13 15:02:15,121 file: hybrid_build.py func: hybrid_build line No: 121 Compile submodel: CNTKGraph_subgraph_9
+2023-05-13 15:02:15,176 file: hbdk_cc.py func: hbdk_cc line No: 119 hbdk-cc parameters:['--O0', '--input-layout', 'NHWC', '--output-layout', 'NCHW']
+2023-05-13 15:02:15,226 file: hybrid_build.py func: hybrid_build line No: 121 Compile submodel: CNTKGraph_subgraph_10
+2023-05-13 15:02:15,551 file: hbdk_cc.py func: hbdk_cc line No: 119 hbdk-cc parameters:['--O0', '--input-layout', 'NHWC', '--output-layout', 'NCHW']
+2023-05-13 15:02:16,072 file: build.py func: build line No: 39 [Sat May 13 15:02:16 2023] End to compile the model with march bernoulli2.
+2023-05-13 15:02:16,073 file: node_info.py func: node_info line No: 48 The converted model node information:
+================================================================================
+Node                                         ON   Subgraph  Type                
+--------------------------------------------------------------------------------
+Minus340                                     CPU  --        Sub                 
+Block352                                     CPU  --        Div                 
+Convolution362                               BPU  id(0)     HzSQuantizedConv    
+Plus364                                      CPU  --        Add                 
+UNIT_CONV_FOR_Plus364_Output_0_TO_FUSE_RELU  BPU  id(1)     HzSQuantizedConv    
+Convolution380                               BPU  id(1)     HzSQuantizedConv    
+Plus382                                      CPU  --        Add                 
+UNIT_CONV_FOR_Plus382_Output_0_TO_FUSE_RELU  BPU  id(2)     HzSQuantizedConv    
+Pooling398                                   BPU  id(2)     HzQuantizedMaxPool  
+Convolution418                               BPU  id(2)     HzSQuantizedConv    
+Plus420                                      CPU  --        Add                 
+UNIT_CONV_FOR_Plus420_Output_0_TO_FUSE_RELU  BPU  id(3)     HzSQuantizedConv    
+Convolution436                               BPU  id(3)     HzSQuantizedConv    
+Plus438                                      CPU  --        Add                 
+UNIT_CONV_FOR_Plus438_Output_0_TO_FUSE_RELU  BPU  id(4)     HzSQuantizedConv    
+Pooling454                                   BPU  id(4)     HzQuantizedMaxPool  
+Convolution474                               BPU  id(4)     HzSQuantizedConv    
+Plus476                                      CPU  --        Add                 
+UNIT_CONV_FOR_Plus476_Output_0_TO_FUSE_RELU  BPU  id(5)     HzSQuantizedConv    
+Convolution492                               BPU  id(5)     HzSQuantizedConv    
+Plus494                                      CPU  --        Add                 
+UNIT_CONV_FOR_Plus494_Output_0_TO_FUSE_RELU  BPU  id(6)     HzSQuantizedConv    
+Convolution510                               BPU  id(6)     HzSQuantizedConv    
+Plus512                                      CPU  --        Add                 
+UNIT_CONV_FOR_Plus512_Output_0_TO_FUSE_RELU  BPU  id(7)     HzSQuantizedConv    
+Pooling528                                   BPU  id(7)     HzQuantizedMaxPool  
+Convolution548                               BPU  id(7)     HzSQuantizedConv    
+Plus550                                      CPU  --        Add                 
+UNIT_CONV_FOR_Plus550_Output_0_TO_FUSE_RELU  BPU  id(8)     HzSQuantizedConv    
+Convolution566                               BPU  id(8)     HzSQuantizedConv    
+Plus568                                      CPU  --        Add                 
+UNIT_CONV_FOR_Plus568_Output_0_TO_FUSE_RELU  BPU  id(9)     HzSQuantizedConv    
+Convolution584                               BPU  id(9)     HzSQuantizedConv    
+Plus586                                      CPU  --        Add                 
+UNIT_CONV_FOR_Plus586_Output_0_TO_FUSE_RELU  BPU  id(10)    HzSQuantizedConv    
+Pooling602                                   BPU  id(10)    HzQuantizedMaxPool  
+Times622                                     BPU  id(10)    HzSQuantizedConv    
+Times656                                     BPU  id(10)    HzSQuantizedConv    
+Times690                                     BPU  id(10)    HzSQuantizedConv    
+Times690_reshape_0                           CPU  --        Reshape
+2023-05-13 15:02:16,074 file: build.py func: build line No: 39 [Sat May 13 15:02:16 2023] End to Horizon NN Model Convert.
+2023-05-13 15:02:16,078 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2534 ONNX model output num : 1
+2023-05-13 15:02:16,094 file: hb_mapper_checker.py func: hb_mapper_checker line No: 141 End model checking....

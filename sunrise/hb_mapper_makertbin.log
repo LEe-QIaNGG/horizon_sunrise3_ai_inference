@@ -1,0 +1,175 @@
+2023-05-13 17:08:55,041 file: hb_mapper.py func: hb_mapper line No: 111 Start hb_mapper....
+2023-05-13 17:08:55,042 file: hb_mapper.py func: hb_mapper line No: 112 log will be stored in /data/horizon_x3/codes/hb_mapper_makertbin.log
+2023-05-13 17:08:55,043 file: hb_mapper.py func: hb_mapper line No: 113 hbdk version 3.27.1
+2023-05-13 17:08:55,043 file: hb_mapper.py func: hb_mapper line No: 114 horizon_nn version 0.12.8
+2023-05-13 17:08:55,043 file: hb_mapper.py func: hb_mapper line No: 115 hb_mapper version 1.5.7
+2023-05-13 17:08:55,044 file: hb_mapper_makertbin.py func: hb_mapper_makertbin line No: 590 Start Model Convert....
+2023-05-13 17:08:55,049 file: mapper_conf_parser.py func: mapper_conf_parser line No: 811 Using abs path /data/horizon_x3/codes/new.onnx
+2023-05-13 17:08:55,051 file: mapper_conf_parser.py func: mapper_conf_parser line No: 137 validating model_parameters...
+2023-05-13 17:08:55,090 file: mapper_conf_parser.py func: mapper_conf_parser line No: 811 Using abs path /data/horizon_x3/codes/model_output
+2023-05-13 17:08:55,092 file: mapper_conf_parser.py func: mapper_conf_parser line No: 149 validating model_parameters finished
+2023-05-13 17:08:55,092 file: mapper_conf_parser.py func: mapper_conf_parser line No: 153 validating input_parameters...
+2023-05-13 17:08:55,093 file: helper.py func: helper line No: 124 Model input names: ['Input3']
+2023-05-13 17:08:55,093 file: mapper_conf_parser.py func: mapper_conf_parser line No: 273 input num is set to 1 according to input_names
+2023-05-13 17:08:55,094 file: mapper_conf_parser.py func: mapper_conf_parser line No: 279 model name missing, using model name from model file: ['Input3']
+2023-05-13 17:08:55,094 file: mapper_conf_parser.py func: mapper_conf_parser line No: 325 model input shape missing, using shape from model file: [[1, 1, 64, 64]]
+2023-05-13 17:08:55,095 file: mapper_conf_parser.py func: mapper_conf_parser line No: 164 validating input_parameters finished
+2023-05-13 17:08:55,095 file: mapper_conf_parser.py func: mapper_conf_parser line No: 168 validating calibration_parameters...
+2023-05-13 17:08:55,095 file: mapper_conf_parser.py func: mapper_conf_parser line No: 811 Using abs path /data/horizon_x3/codes/calibration_data
+2023-05-13 17:08:55,096 file: mapper_conf_parser.py func: mapper_conf_parser line No: 182 validating calibration_parameters finished
+2023-05-13 17:08:55,096 file: mapper_conf_parser.py func: mapper_conf_parser line No: 186 validating custom_op...
+2023-05-13 17:08:55,097 file: mapper_conf_parser.py func: mapper_conf_parser line No: 724 custom_op does not exist, skipped
+2023-05-13 17:08:55,097 file: mapper_conf_parser.py func: mapper_conf_parser line No: 192 validating custom_op finished
+2023-05-13 17:08:55,098 file: mapper_conf_parser.py func: mapper_conf_parser line No: 195 validating compiler_parameters...
+2023-05-13 17:08:55,098 file: mapper_conf_parser.py func: mapper_conf_parser line No: 201 validating compiler_parameters finished
+2023-05-13 17:08:55,098 file: tool_utils.py func: tool_utils line No: 94 setting log file level to INFO
+2023-05-13 17:08:55,101 file: loader.py func: loader line No: 44 *******************************************
+2023-05-13 17:08:55,101 file: loader.py func: loader line No: 45 First calibration picture name: 1000268201_693b08cb0e.jpg
+2023-05-13 17:08:55,102 file: loader.py func: loader line No: 47 First calibration picture md5:
+2023-05-13 17:08:55,108 file: loader.py func: loader line No: 51 *******************************************
+2023-05-13 17:08:55,193 file: build.py func: build line No: 36 [Sat May 13 17:08:55 2023] Start to Horizon NN Model Convert.
+2023-05-13 17:08:55,193 file: dict_parser.py func: dict_parser line No: 30 Parsing the input parameter:{'Input3': {'input_shape': [1, 1, 64, 64], 'expected_input_type': 'GRAY_128', 'original_input_type': 'GRAY', 'original_input_layout': 'NCHW'}}
+2023-05-13 17:08:55,194 file: build.py func: build line No: 237 Parsing the calibration parameter
+2023-05-13 17:08:55,194 file: dict_parser.py func: dict_parser line No: 496 Parsing the hbdk parameter:{'hbdk_pass_through_params': '--fast --O3', 'input-source': {'Input3': 'pyramid', '_default_value': 'ddr'}}
+2023-05-13 17:08:55,195 file: build.py func: build line No: 143 HorizonNN version: 0.12.8
+2023-05-13 17:08:55,196 file: build.py func: build line No: 147 HBDK version: 3.27.1
+2023-05-13 17:08:55,196 file: build.py func: build line No: 36 [Sat May 13 17:08:55 2023] Start to parse the onnx model.
+2023-05-13 17:08:55,316 file: onnx_parser.py func: onnx_parser line No: 146 ONNX model info:
+ONNX IR version:  6
+Opset version:    11
+Input name:       Input3, [1, 1, 64, 64]
+2023-05-13 17:08:55,497 file: build.py func: build line No: 39 [Sat May 13 17:08:55 2023] End to parse the onnx model.
+2023-05-13 17:08:55,497 file: build.py func: build line No: 266 Model input names: ['Input3']
+2023-05-13 17:08:55,498 file: dict_parser.py func: dict_parser line No: 269 Create a preprocessing operator for input_name Input3 with means=None, std=None, original_input_layout=NCHW, color convert from 'GRAY' to 'GRAY'.
+2023-05-13 17:08:55,644 file: build.py func: build line No: 535 Saving the original float model: emotion_ferplus_original_float_model.onnx.
+2023-05-13 17:08:55,645 file: build.py func: build line No: 36 [Sat May 13 17:08:55 2023] Start to optimize the model.
+2023-05-13 17:08:56,318 file: build.py func: build line No: 39 [Sat May 13 17:08:56 2023] End to optimize the model.
+2023-05-13 17:08:56,359 file: build.py func: build line No: 546 Saving the optimized model: emotion_ferplus_optimized_float_model.onnx.
+2023-05-13 17:08:56,359 file: build.py func: build line No: 36 [Sat May 13 17:08:56 2023] Start to calibrate the model.
+2023-05-13 17:08:56,723 file: calibration_data_set.py func: calibration_data_set line No: 66 There are 51 samples in the calibration data set.
+2023-05-13 17:08:56,884 file: max_calibrater.py func: max_calibrater line No: 66 Run calibration model with max-percentile=0.999900 method.
+2023-05-13 17:08:57,958 file: build.py func: build line No: 39 [Sat May 13 17:08:57 2023] End to calibrate the model.
+2023-05-13 17:08:57,959 file: build.py func: build line No: 36 [Sat May 13 17:08:57 2023] Start to quantize the model.
+2023-05-13 17:08:59,902 file: build.py func: build line No: 39 [Sat May 13 17:08:59 2023] End to quantize the model.
+2023-05-13 17:09:00,175 file: build.py func: build line No: 560 Saving the quantized model: emotion_ferplus_quantized_model.onnx.
+2023-05-13 17:09:00,176 file: build.py func: build line No: 36 [Sat May 13 17:09:00 2023] Start to compile the model with march bernoulli2.
+2023-05-13 17:09:00,549 file: hybrid_build.py func: hybrid_build line No: 121 Compile submodel: CNTKGraph_subgraph_0
+2023-05-13 17:09:00,576 file: hbdk_cc.py func: hbdk_cc line No: 119 hbdk-cc parameters:['--fast', '--O3', '--input-layout', 'NHWC', '--output-layout', 'NCHW', '--input-source', 'pyramid']
+2023-05-13 17:09:00,643 file: tool_utils.py func: tool_utils line No: 293 consumed time 0.0281609
+2023-05-13 17:09:00,691 file: hybrid_build.py func: hybrid_build line No: 121 Compile submodel: CNTKGraph_subgraph_1
+2023-05-13 17:09:00,718 file: hbdk_cc.py func: hbdk_cc line No: 119 hbdk-cc parameters:['--fast', '--O3', '--input-layout', 'NHWC', '--output-layout', 'NCHW', '--input-source', 'ddr']
+2023-05-13 17:09:00,770 file: tool_utils.py func: tool_utils line No: 293 consumed time 0.0261099
+2023-05-13 17:09:00,806 file: hybrid_build.py func: hybrid_build line No: 121 Compile submodel: CNTKGraph_subgraph_2
+2023-05-13 17:09:00,833 file: hbdk_cc.py func: hbdk_cc line No: 119 hbdk-cc parameters:['--fast', '--O3', '--input-layout', 'NHWC', '--output-layout', 'NCHW', '--input-source', 'ddr']
+2023-05-13 17:09:00,938 file: tool_utils.py func: tool_utils line No: 293 consumed time 0.0782107
+2023-05-13 17:09:00,975 file: hybrid_build.py func: hybrid_build line No: 121 Compile submodel: CNTKGraph_subgraph_3
+2023-05-13 17:09:01,006 file: hbdk_cc.py func: hbdk_cc line No: 119 hbdk-cc parameters:['--fast', '--O3', '--input-layout', 'NHWC', '--output-layout', 'NCHW', '--input-source', 'ddr']
+2023-05-13 17:09:01,100 file: tool_utils.py func: tool_utils line No: 293 consumed time 0.0668674
+2023-05-13 17:09:01,138 file: hybrid_build.py func: hybrid_build line No: 121 Compile submodel: CNTKGraph_subgraph_4
+2023-05-13 17:09:01,172 file: hbdk_cc.py func: hbdk_cc line No: 119 hbdk-cc parameters:['--fast', '--O3', '--input-layout', 'NHWC', '--output-layout', 'NCHW', '--input-source', 'ddr']
+2023-05-13 17:09:01,264 file: tool_utils.py func: tool_utils line No: 293 consumed time 0.0649783
+2023-05-13 17:09:01,302 file: hybrid_build.py func: hybrid_build line No: 121 Compile submodel: CNTKGraph_subgraph_5
+2023-05-13 17:09:01,344 file: hbdk_cc.py func: hbdk_cc line No: 119 hbdk-cc parameters:['--fast', '--O3', '--input-layout', 'NHWC', '--output-layout', 'NCHW', '--input-source', 'ddr']
+2023-05-13 17:09:01,439 file: tool_utils.py func: tool_utils line No: 293 consumed time 0.0674331
+2023-05-13 17:09:01,477 file: hybrid_build.py func: hybrid_build line No: 121 Compile submodel: CNTKGraph_subgraph_6
+2023-05-13 17:09:01,534 file: hbdk_cc.py func: hbdk_cc line No: 119 hbdk-cc parameters:['--fast', '--O3', '--input-layout', 'NHWC', '--output-layout', 'NCHW', '--input-source', 'ddr']
+2023-05-13 17:09:01,629 file: tool_utils.py func: tool_utils line No: 293 consumed time 0.0670696
+2023-05-13 17:09:01,673 file: hybrid_build.py func: hybrid_build line No: 121 Compile submodel: CNTKGraph_subgraph_7
+2023-05-13 17:09:01,739 file: hbdk_cc.py func: hbdk_cc line No: 119 hbdk-cc parameters:['--fast', '--O3', '--input-layout', 'NHWC', '--output-layout', 'NCHW', '--input-source', 'ddr']
+2023-05-13 17:09:01,840 file: tool_utils.py func: tool_utils line No: 293 consumed time 0.0741806
+2023-05-13 17:09:01,880 file: hybrid_build.py func: hybrid_build line No: 121 Compile submodel: CNTKGraph_subgraph_8
+2023-05-13 17:09:01,939 file: hbdk_cc.py func: hbdk_cc line No: 119 hbdk-cc parameters:['--fast', '--O3', '--input-layout', 'NHWC', '--output-layout', 'NCHW', '--input-source', 'ddr']
+2023-05-13 17:09:02,050 file: tool_utils.py func: tool_utils line No: 293 consumed time 0.0844906
+2023-05-13 17:09:02,091 file: hybrid_build.py func: hybrid_build line No: 121 Compile submodel: CNTKGraph_subgraph_9
+2023-05-13 17:09:02,151 file: hbdk_cc.py func: hbdk_cc line No: 119 hbdk-cc parameters:['--fast', '--O3', '--input-layout', 'NHWC', '--output-layout', 'NCHW', '--input-source', 'ddr']
+2023-05-13 17:09:02,244 file: tool_utils.py func: tool_utils line No: 293 consumed time 0.0658326
+2023-05-13 17:09:02,284 file: hybrid_build.py func: hybrid_build line No: 121 Compile submodel: CNTKGraph_subgraph_10
+2023-05-13 17:09:02,342 file: hbdk_cc.py func: hbdk_cc line No: 119 hbdk-cc parameters:['--fast', '--O3', '--input-layout', 'NHWC', '--output-layout', 'NCHW', '--input-source', 'ddr']
+2023-05-13 17:09:02,439 file: tool_utils.py func: tool_utils line No: 293 consumed time 0.0699349
+2023-05-13 17:09:02,477 file: hybrid_build.py func: hybrid_build line No: 121 Compile submodel: CNTKGraph_subgraph_11
+2023-05-13 17:09:02,790 file: hbdk_cc.py func: hbdk_cc line No: 119 hbdk-cc parameters:['--fast', '--O3', '--input-layout', 'NHWC', '--output-layout', 'NCHW', '--input-source', 'ddr']
+2023-05-13 17:09:02,957 file: tool_utils.py func: tool_utils line No: 293 consumed time 0.139218
+2023-05-13 17:09:03,446 file: build.py func: build line No: 39 [Sat May 13 17:09:03 2023] End to compile the model with march bernoulli2.
+2023-05-13 17:09:03,448 file: node_info.py func: node_info line No: 48 The converted model node information:
+=================================================================================================================================
+Node                                         ON   Subgraph  Type                    Cosine Similarity  Threshold                 
+---------------------------------------------------------------------------------------------------------------------------------
+HZ_PREPROCESS_FOR_Input3                     BPU  id(0)     HzSQuantizedPreprocess  1.000000           127.000000                
+Minus340                                     CPU  --        Sub                     1.000000           --                        
+Block352                                     CPU  --        Div                     1.000000           --                        
+Convolution362                               BPU  id(1)     HzSQuantizedConv        0.999748           0.500000                  
+Plus364                                      CPU  --        Add                     0.999883           1.070824                  
+UNIT_CONV_FOR_Plus364_Output_0_TO_FUSE_RELU  BPU  id(2)     HzSQuantizedConv        
+Convolution380                               BPU  id(2)     HzSQuantizedConv        0.999476           1.070824                  
+Plus382                                      CPU  --        Add                     0.999468           1.592591                  
+UNIT_CONV_FOR_Plus382_Output_0_TO_FUSE_RELU  BPU  id(3)     HzSQuantizedConv        
+Pooling398                                   BPU  id(3)     HzQuantizedMaxPool      0.999631           1.592591                  
+Convolution418                               BPU  id(3)     HzSQuantizedConv        0.999617           1.592591                  
+Plus420                                      CPU  --        Add                     0.999542           2.539403                  
+UNIT_CONV_FOR_Plus420_Output_0_TO_FUSE_RELU  BPU  id(4)     HzSQuantizedConv        
+Convolution436                               BPU  id(4)     HzSQuantizedConv        0.999415           2.539403                  
+Plus438                                      CPU  --        Add                     0.999381           3.280148                  
+UNIT_CONV_FOR_Plus438_Output_0_TO_FUSE_RELU  BPU  id(5)     HzSQuantizedConv        
+Pooling454                                   BPU  id(5)     HzQuantizedMaxPool      0.999225           3.280148                  
+Convolution474                               BPU  id(5)     HzSQuantizedConv        0.998954           3.280148                  
+Plus476                                      CPU  --        Add                     0.998909           3.490762                  
+UNIT_CONV_FOR_Plus476_Output_0_TO_FUSE_RELU  BPU  id(6)     HzSQuantizedConv        
+Convolution492                               BPU  id(6)     HzSQuantizedConv        0.998128           3.490762                  
+Plus494                                      CPU  --        Add                     0.998082           2.662993                  
+UNIT_CONV_FOR_Plus494_Output_0_TO_FUSE_RELU  BPU  id(7)     HzSQuantizedConv        
+Convolution510                               BPU  id(7)     HzSQuantizedConv        0.991503           2.662993                  
+Plus512                                      CPU  --        Add                     0.991564           1.279406                  
+UNIT_CONV_FOR_Plus512_Output_0_TO_FUSE_RELU  BPU  id(8)     HzSQuantizedConv        
+Pooling528                                   BPU  id(8)     HzQuantizedMaxPool      0.997857           1.279406                  
+Convolution548                               BPU  id(8)     HzSQuantizedConv        0.997889           1.279406                  
+Plus550                                      CPU  --        Add                     0.997922           0.858487                  
+UNIT_CONV_FOR_Plus550_Output_0_TO_FUSE_RELU  BPU  id(9)     HzSQuantizedConv        
+Convolution566                               BPU  id(9)     HzSQuantizedConv        0.996452           0.858487                  
+Plus568                                      CPU  --        Add                     0.996620           0.547621                  
+UNIT_CONV_FOR_Plus568_Output_0_TO_FUSE_RELU  BPU  id(10)    HzSQuantizedConv        
+Convolution584                               BPU  id(10)    HzSQuantizedConv        0.996975           0.547621                  
+Plus586                                      CPU  --        Add                     0.997962           0.287259                  
+UNIT_CONV_FOR_Plus586_Output_0_TO_FUSE_RELU  BPU  id(11)    HzSQuantizedConv        
+Pooling602                                   BPU  id(11)    HzQuantizedMaxPool      0.996644           0.287259                  
+Times622                                     BPU  id(11)    HzSQuantizedConv        0.998388           0.287259                  
+Times656                                     BPU  id(11)    HzSQuantizedConv        0.999670           0.247394                  
+Times690                                     BPU  id(11)    HzSQuantizedConv        0.999996           0.358461                  
+Times690_reshape_0                           CPU  --        Reshape
+2023-05-13 17:09:03,449 file: build.py func: build line No: 39 [Sat May 13 17:09:03 2023] End to Horizon NN Model Convert.
+2023-05-13 17:09:03,562 file: hb_mapper_makertbin.py func: hb_mapper_makertbin line No: 641 start convert to *.bin file....
+2023-05-13 17:09:03,590 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2534 ONNX model output num : 1
+2023-05-13 17:09:03,592 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2410 ############# model deps info #############
+2023-05-13 17:09:03,592 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2412 hb_mapper version   : 1.5.7
+2023-05-13 17:09:03,593 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2415 hbdk version        : 3.27.1
+2023-05-13 17:09:03,594 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2417 hbdk runtime version: 3.13.25
+2023-05-13 17:09:03,594 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2420 horizon_nn version  : 0.12.8
+2023-05-13 17:09:03,594 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2423 ############# model_parameters info #############
+2023-05-13 17:09:03,595 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2429 onnx_model          : /data/horizon_x3/codes/new.onnx
+2023-05-13 17:09:03,595 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2430 BPU march           : bernoulli2
+2023-05-13 17:09:03,596 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2431 layer_out_dump      : False
+2023-05-13 17:09:03,596 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2432 log_level           : INFO
+2023-05-13 17:09:03,596 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2433 working dir         : /data/horizon_x3/codes/model_output
+2023-05-13 17:09:03,596 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2434 output_model_file_prefix: emotion_ferplus
+2023-05-13 17:09:03,597 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2441 ############# input_parameters info #############
+2023-05-13 17:09:03,597 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2458 ------------------------------------------
+2023-05-13 17:09:03,598 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2460 ---------input info : Input3 ---------
+2023-05-13 17:09:03,598 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2461 input_name          : Input3
+2023-05-13 17:09:03,598 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2462 input_type_rt       : gray
+2023-05-13 17:09:03,598 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2465 input_space&range   : regular
+2023-05-13 17:09:03,599 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2466 input_layout_rt     : NCHW
+2023-05-13 17:09:03,599 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2467 input_type_train    : gray
+2023-05-13 17:09:03,599 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2468 input_layout_train  : NCHW
+2023-05-13 17:09:03,600 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2469 norm_type           : no_preprocess
+2023-05-13 17:09:03,600 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2470 input_shape         : 1x1x64x64
+2023-05-13 17:09:03,600 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2478 cal_data_dir        : /data/horizon_x3/codes/calibration_data
+2023-05-13 17:09:03,601 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2479 ---------input info : Input3 end -------
+2023-05-13 17:09:03,601 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2480 ------------------------------------------
+2023-05-13 17:09:03,602 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2482 ############# calibration_parameters info #############
+2023-05-13 17:09:03,602 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2483 preprocess_on       : False
+2023-05-13 17:09:03,602 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2484 calibration_type:   : max
+2023-05-13 17:09:03,603 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2487 max_percentile      : 0.9999
+2023-05-13 17:09:03,603 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2508 ############# compiler_parameters info #############
+2023-05-13 17:09:03,603 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2512 hbdk_pass_through_params: --fast --O3
+2023-05-13 17:09:03,604 file: onnx2horizonrt.py func: onnx2horizonrt line No: 2512 input-source        : {'Input3': 'pyramid', '_default_value': 'ddr'}
+2023-05-13 17:09:03,620 file: hb_mapper_makertbin.py func: hb_mapper_makertbin line No: 768 Convert to runtime bin file sucessfully!
+2023-05-13 17:09:03,620 file: hb_mapper_makertbin.py func: hb_mapper_makertbin line No: 769 End Model Convert
